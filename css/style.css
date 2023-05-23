@@ -1,0 +1,180 @@
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+
+* {
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Header*/
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav li:first-child {
+    padding-left: 0;
+}
+
+.nav li:last-child {
+    padding-right: 0;
+}
+
+/*MAIN*/
+
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.main__intro {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.intro__form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.intro__form .form__heading {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field label {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.form__input {
+    padding-bottom: 8px;
+    color: var(--text-color);
+    border-bottom: 1px solid gray;
+}
+
+.form__button {
+    cursor: pointer;
+    padding: 20px 30px;
+    margin-top: 40px;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.intro__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__small-heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.info__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.info__icons {
+    display: flex;
+    margin-top: 60px;
+}
+
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 150px;
+}
+
+.icons__item:first-child {
+    margin-left: 0;
+}
+
+.icons__item::before {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+}
+
+.icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+
+.icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+
+.icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+
+.icons__item .item__text {
+    font-weight: 600;
+}
